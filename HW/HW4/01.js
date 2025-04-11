@@ -1,7 +1,7 @@
 function countLetters(str) {
-     let letterMap = new Map();
+     const letterMap = new Map();
     
-    for (let char of str) {
+    for (const char of str) {
         letterMap.set(char, (letterMap.get(char) || 0) + 1);
     }
     
